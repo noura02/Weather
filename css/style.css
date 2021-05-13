@@ -1,0 +1,164 @@
+/*______________________general_________________________*/
+
+.theme-color {
+    color: #1e202b;
+}
+.main-color {
+    color: #009ad8;
+}
+
+.grey {
+    color: #a1aab3;
+}
+
+
+body {
+    background-color: #1e202b;
+}
+/*______________________navbar__________________________*/
+
+#home {
+    border: 2px solid #009ad8;
+    border-radius: 20px;
+    color: #009ad8 !important;
+    
+}
+.nav-link {
+    font-size: 14px;
+    margin: 0 10px;
+    border: solid transparent 2px;
+    transition: all 0.6s;
+    border-radius: 20px;
+    color:#fff !important;
+}
+nav {
+    background-color: #1e202b;
+}
+.navbar-brand {
+  width:100px;
+}
+.nav-link:hover {
+    border: 2px solid #009ad8;
+    border-radius: 20px;
+    color: #009ad8 !important;
+}
+h1{
+    font-size:16px;
+    font-weight:bold;
+    position:relative;
+}
+.bold{
+    font-weight:bold;
+    font-size:25px;
+}
+input {
+    outline: 0;
+}
+
+   
+
+
+
+
+
+
+
+/*______________________sec-1__________________________*/
+.sec-1 {
+    background-image: url(../imgs/banner.png);
+    background-repeat:no-repeat;
+    background-size:100% 60%;
+}
+
+.sec-1 input {
+    background-color: #1e202b;
+    border-radius: 25px;
+    border: solid 1px #1e202b;
+}
+
+.sec-1 .btn1 {
+    color: white;
+    background-color: #009ad8;
+    border-radius: 20px;
+}
+
+.forecast {
+    background-color: #323544;
+}
+.forecast-middle {
+    background-color: #262936;
+}
+
+.city {
+    color: #bfc1c8;
+    font-size:18px !important;
+}
+.temp{
+    color:#fff;
+    font-size:70px !important;
+    font-weight:bold;
+}
+.cond {
+    color: #009ad8;
+    font-size: 16px !important;
+}
+
+
+#date p, #tomorrowDate p, #afterDate p , #date span{
+        color: #bfc1c8;
+    }
+#date,#tomorrowDate,#afterDate{
+    background-color:rgba(0,0,0,0.1);
+}
+.today-icon {
+    width: 70px;
+    height: 70px;
+}
+.navbar-toggler{
+    background-color:white !important;
+}
+/*______________________sec-2__________________________*/
+.sec-2, footer {
+    background-color: #262936;
+}
+    .sec-2 i {
+        margin: 0 2px;
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #1e202b;
+        color: #009ad8;
+        transition:all 0.6s;
+    }
+    .sec-2 input {
+        background-color: #1e202b;
+        border-radius: 25px;
+        border: solid 1px #1e202b;
+    }
+.sub-div {
+    background-color: #1e202b;
+    border-radius: 25px;
+}
+.sec-2 .btn2 {
+    color: white;
+    background-color: #009ad8;
+    border-radius: 20px;
+}
+
+.sec-2 i:hover {
+        color: #fff;
+        background-color: #009ad8;
+}
+
+#today p{
+        font-size:12px;
+}
+
+
+
+
+
+
+    footer p {
+        color: #a1aab3;
+    }
