@@ -16,7 +16,7 @@ async function getWeather(city) {
     locationArray = Array(weatherResponce.location);//array
     forecastArray = weatherResponce.forecast.forecastday;
     displayWeather();
-    getDate()
+    getDate();
 }
 
 
@@ -39,7 +39,7 @@ function displayWeather() {
                              <img src="imgs/icon-wind.png" class="img-fluid" /><span class='grey ml-2 mr-3' >18km/hr</span>
                              <img src="imgs/icon-compass.png" class="img-fluid" /><span class='grey ml-2 mr-3' >East</span>
                              </div>
-`
+`;
         
         tomorrowContainer += ` 
                                <img src='http:${forecastArray[1].day.condition.icon}'>
@@ -48,7 +48,7 @@ function displayWeather() {
                               <p class='cond'>${forecastArray[1].day.condition.text}</p>
                              
                               
-                               `
+                               `;
 
         afterContainer += ` 
                                <img src='http:${forecastArray[2].day.condition.icon}'>
@@ -64,7 +64,7 @@ function displayWeather() {
     document.querySelector('.sec-1 #today').innerHTML = currentContainer;
     document.querySelector('.sec-1 #tomorrow').innerHTML = tomorrowContainer;
     document.querySelector('.sec-1 #afterTomorrow').innerHTML = afterContainer;
-}
+};
 
 
 
@@ -76,16 +76,16 @@ searchInput.addEventListener('keyup', function (e) {
 
 
         if (currentName.toLowerCase().includes(val.toLowerCase())) {
-            getWeather(currentName)
+            getWeather(currentName);
 
         }
         else {
-            getWeather('london')
+            getWeather('london');
 
         }
     }
     searchInput.style.color = '#fff';
-})
+});
 
 
 
@@ -99,17 +99,17 @@ function getDate() {
         `<div class='d-flex justify-content-between'>
         <p>${days[date.getDay()]}</p>
         <p class='ml-auto'>${date.getDate()}</p><span class='ml-1'>${months[date.getMonth()]}</span>
-        </div>`
+        </div>`;
     document.getElementById('tomorrowDate').innerHTML = `<p>${days[date.getDay() + 1]}<p/>`;
     document.getElementById('afterDate').innerHTML = `<p>${days[date.getDay() + 2]}<p/>`;
-}
+};
   
 
 searchInput.addEventListener('click', function (e) {
    
     searchInput.style.color = '#fff';
-})
+});
 subInput.addEventListener('click', function (e) {
 
     subInput.style.color = '#fff';
-})
+});
