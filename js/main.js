@@ -10,7 +10,7 @@ var currentName = 0;
 getWeather(`london`);
 
 async function getWeather(city) {
-    var weatherApi = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=f26ac50b8bf1479eae6142014210205&q=${city}&days=7`);
+    var weatherApi = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=f26ac50b8bf1479eae6142014210205&q=${city}&days=7`);
     var weatherResponce = await weatherApi.json(); //object
     currentArray = Array( weatherResponce.current); //array
     locationArray = Array(weatherResponce.location);//array
