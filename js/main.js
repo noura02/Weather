@@ -31,7 +31,7 @@ function displayWeather() {
         currentContainer += `
                               
                               <p class=' city'>${locationArray[i].name}</p>
-                      <div class='d-flex justify-content-between'> <p class='temp'>${currentArray[i].temp_c}&#176 C</p><img class='today-icon mt-3' src='http:${currentArray[i].condition.icon}'></div>
+                      <div class='d-flex justify-content-between'> <p class='temp'>${currentArray[i].temp_c}&#176 C</p><img class='today-icon mt-3' src='https:${currentArray[i].condition.icon}'></div>
                               <p class='cond'>${currentArray[i].condition.text}</p>
                               
 
